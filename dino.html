@@ -6,10 +6,56 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>공룡</title>
 </head>
-<body>
+<style>
+	.wrap{
+		width: 100%;		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-	<canvas id="canvas"></canvas>
-	<script src="dino.js"></script>
+	#scoreWrap #title{
+		width: 100%;
+		display: flex;
+		justify-content: center;~
+		align-items: center;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		align-content: center;
+	}
+
+</style>
+<script>	
 	
+</script>
+<body>
+	<div class="wrap">
+		<canvas id="canvas"></canvas>	
+	</div>
+	<div id="scoreWrap">
+		<div id="title">
+			<span id="name">항하사 : </span>
+			<span>이번 점수</span>
+			<span id="score">0</span>
+		</div>
+		<div id="scoreList">
+			<span>최고 점수</span>
+			<table>
+				<thead>
+					<tr>
+						<td>이름</td>
+						<td>점수</td>
+					</tr>					
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>100</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script src="dino.js"></script>
 </body>
 </html>
